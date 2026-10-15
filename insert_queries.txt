@@ -1,0 +1,59 @@
+INSERT INTO customers
+    (customer_id, customer_name, email, phone_num)
+VALUES
+    (101, 'Rahul Sharma', 'rahul101@example.com', '9876500001'),
+    (102, 'Priya Reddy', 'priya102@example.com', '9876500002'),
+    (103, 'Arjun Kumar', 'arjun103@example.com', '9876500003'),
+    (104, 'Sneha Rao', 'sneha104@example.com', '9876500004'),
+    (105, 'Karthik Varma', 'karthik105@example.com', '9876500005'),
+    (106, 'Divya Singh', 'divya106@example.com', '9876500006'),
+    (107, 'Vikram Patel', 'vikram107@example.com', '9876500007'),
+    (108, 'Ananya Gupta', 'ananya108@example.com', '9876500008'),
+    (109, 'Manoj Reddy', 'manoj109@example.com', '9876500009'),
+    (110, 'Keerthi Rao', 'keerthi110@example.com', '9876500010');
+
+
+INSERT INTO products
+    (product_id, product_name, product_quantity,
+     product_cost_per_quantity)
+VALUES
+    (1, 'Laptop', 10, 50000.00),
+    (2, 'Wireless Mouse', 50, 500.00),
+    (3, 'Mechanical Keyboard', 30, 1500.00),
+    (4, 'Monitor', 15, 12000.00),
+    (5, 'Headphones', 20, 2500.00),
+    (6, 'Webcam', 12, 3000.00),
+    (7, 'USB Hub', 25, 800.00),
+    (8, 'External SSD', 18, 4000.00),
+    (9, 'WiFi Router', 10, 2200.00),
+    (10, 'Desk Lamp', 20, 900.00);
+
+
+INSERT INTO orders
+    (order_id, customer_id, total_amount, status)
+VALUES
+    (1001, 101, 50000.00, 'PLACED'),
+    (1002, 102, 1000.00, 'PROCESSING'),
+    (1003, 103, 1500.00, 'SHIPPED'),
+    (1004, 104, 12000.00, 'DELIVERED'),
+    (1005, 105, 5000.00, 'PLACED'),
+    (1006, 106, 3000.00, 'PROCESSING'),
+    (1007, 107, 2400.00, 'PLACED'),
+    (1008, 108, 8000.00, 'SHIPPED'),
+    (1009, 109, 2200.00, 'DELIVERED'),
+    (1010, 110, 3600.00, 'PLACED');
+
+
+INSERT INTO order_items
+    (order_id, product_id, quantity, unit_price)
+VALUES
+    (1001, 1, 1, 50000.00),
+    (1002, 2, 2, 500.00),
+    (1003, 3, 1, 1500.00),
+    (1004, 4, 1, 12000.00),
+    (1005, 5, 2, 2500.00),
+    (1006, 6, 1, 3000.00),
+    (1007, 7, 3, 800.00),
+    (1008, 8, 2, 4000.00),
+    (1009, 9, 1, 2200.00),
+    (1010, 10, 4, 900.00);
